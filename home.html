@@ -30,70 +30,86 @@
     </nav>
 
     <main>
-      <h1 class="hero__title">Empower your business with stunning design!</h1>
-      <p class="hero__text">
-        Circle is a digital design and development studio. We design and
-        develop astonishing websites and mobile apps.
-      </p>
-      <div class="hero__buttons">
-        <button class="hero__contact-button" type="button">Get in touch</button>
-        <a class="hero__link" href="#projects">See our work</a>
-      </div>
-      <div class="hero__images">
-        <img
+      <div class="hero__container">
+        <div class="hero__section hero__text-section">
+          <h1 class="hero__title">Empower your business with stunning design!</h1>
+          <p class="hero__text">
+            Circle is a digital design and development studio. We design and
+            develop astonishing websites and mobile apps.
+          </p>
+          <div class="hero__buttons">
+            <button class="hero__contact-button" type="button">Get in touch</button>
+            <a class="hero__link" href="#projects">See our work</a>
+          </div>
+        </div>
+        <div class="hero__section hero__images">
+          <img
           class="hero__secondary-1"
           src="images/hero-section/card-1.png"
           alt="hero-two"
-        />
-        <img
+          />
+          <img
           class="hero__main-image"
           src="images/hero-section/hero-image.png"
           alt="hero-image"
-        />
-        <img
+          />
+          <img
           class="hero__secondary-2"
           src="images/hero-section/card-2.png"
           alt="hero-three"
-        />
+          />
+        </div>
       </div>
     </main>
 
     <section class="logos">
-      <img
-        class="logo logo-1"
-        name="airbnb-logo"
-        src="images/logos/airbnb-logo.svg"
-        alt="Airbnb logo"
-      />
-      <img
-        class="logo logo-2"
-        name="google-logo"
-        src="images/logos/google-logo.svg"
-        alt="Google logo"
-      />
-      <img
-        class="logo logo-3"
-        name="microsoft-logo"
-        src="images/logos/microsoft-logo.svg"
-        alt="Microsoft logo"
-      />
-      <img
-        class="logo logo-4"
-        name="fedex-logo"
-        src="images/logos/fedex-logo.svg"
-        alt="Fedex logo"
-      />
-      <img
-        class="logo logo-5"
-        name="amazon-logo"
-        src="images/logos/amazon-logo.svg"
-        alt="Amazon logo"
-      />
+      <div class="logos__container">
+        <div class="logo__space">
+          <img
+          class="logo logo-1"
+          name="airbnb-logo"
+          src="images/logos/airbnb-logo.svg"
+          alt="Airbnb logo"
+          />
+        </div>
+        <div class="logo__space">
+          <img
+          class="logo logo-2"
+          name="google-logo"
+          src="images/logos/google-logo.svg"
+          alt="Google logo"
+          />
+        </div>
+        <div class="logo__space">  
+          <img
+          class="logo logo-3"
+          name="microsoft-logo"
+          src="images/logos/microsoft-logo.svg"
+          alt="Microsoft logo"
+          />
+        </div>
+        <div class="logo__space">
+          <img
+          class="logo logo-4"
+          name="fedex-logo"
+          src="images/logos/fedex-logo.svg"
+          alt="Fedex logo"
+          />
+        </div>
+        <div class="logo__space">
+          <img
+          class="logo logo-5"
+          name="amazon-logo"
+          src="images/logos/amazon-logo.svg"
+          alt="Amazon logo"
+          />
+        </div>
+      </div>
     </section>
 
     <section class="cards">
       <h2 class="cards-section__title">Recent Projects</h2>
-      <div class="cards-section__card">
+      <div class="cards-section__container">
         <div class="card">
           <img class="card__image" src="images/Projects-section/1.jpg" />
           <h3 class="card__title">Simplify</h3>
@@ -116,25 +132,45 @@
     </section>
 
     <section class="memojis-box box">
+      <div class="memojis-box__section-1">
         <img class="memojis-box__memoji memoji-1" src="images/testimonial-section/memoji-1.png" />
+      </div>
+      <div class="memojis-box__section-2">
         <img class="memojis-box__memoji memoji-2" src="images/testimonial-section/memoji-3.png" />
+      </div>
+      <div class="memojis-box__section-5">
         <h3 class="memojis-box__title">Hear What Our Clients Have to Say</h3>
+      </div>
+      <div class="memojis-box__section-6">
         <p class="memojis-box__testimonial">
           "Circle helped us through every stage of our startup.<br />
           We really enjoyed working with you"
         </p>
-        <img class="memojis-box__client-image" src="images/testimonial-section/profile.png" />
-        <div class="memojis-box__client-data">
+      </div>
+      <div class="memojis-box__section-7">
+        <div class="memojis-box__data-client-section">
+
+          <img class="memojis-box__client-image" src="images/testimonial-section/profile.png" />
+        </div>
+        <div class="memojis-box__data-client-section">
+
+          <div class="memojis-box__client-data">
             <p class="client-data client-name">Kristin Watson</p>
             <p class="client-data client-company">Booking.com</p>
+          </div>
         </div>
+      </div>
+      <div class="memojis-box__section-3">
         <img class="memojis-box__memoji memoji-3" src="images/testimonial-section/memoji-2.png" />
+      </div>
+      <div class="memojis-box__section-4">
         <img class="memojis-box__memoji memoji-4" src="images/testimonial-section/memoji-4.png" />
+      </div>
     </section>
 
     <section class="cards">
       <h2 class="cards-section__title">Our Services</h2>
-      <div class="cards-section__card">
+      <div class="cards-section__container">
         <div class="card">
           <img class="card__icon" src="images/services-section/1.svg" alt />
           <h3 class="card__title">User Interface Design</h3>
