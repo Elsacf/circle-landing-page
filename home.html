@@ -14,19 +14,26 @@
 
   <body>
     <nav class="navbar">
-      <img
+      <div class="navbar__logo-container">
+        <img
         class="navbar__logo"
         src="images/logos/circle.svg"
         alt="Circle Logo"
-      />
-      <!-- <div class="navbar__menu">
-        <ul>
-          <li><a href="home.html" class="menu-link">Home</a></li>
-          <li><a href="projects.html" class="menu-link">Projects</a></li>
-          <li><a href="#services" class="menu-link">Services</a></li>
-        </ul>
-      </div> -->
-      <a class="navbar__button" href="contact.html">Contact Us</a>
+        href="home.html"
+        />
+      </div>
+      <div class="navbar__home-link">
+        <a href="home.html" class="menu-link">Home</a>
+      </div>
+      <div class="navbar__projects-link">
+        <a href="#projects" class="menu-link">Projects</a>
+      </div>
+      <div class="navbar__services-link">
+        <a href="#services" class="menu-link">Services</a>
+      </div>
+      <div class="navbar__button-container">
+        <a class="navbar__button" href="contact.html">Contact Us</a>
+      </div>
     </nav>
 
     <main>
@@ -107,7 +114,7 @@
       </div>
     </section>
 
-    <section class="cards">
+    <section class="cards" id="projects">
       <h2 class="cards-section__title">Recent Projects</h2>
       <div class="cards-section__container">
         <div class="card">
@@ -168,7 +175,7 @@
       </div>
     </section>
 
-    <section class="cards">
+    <section class="cards" id="services">
       <h2 class="cards-section__title">Our Services</h2>
       <div class="cards-section__container">
         <div class="card">
