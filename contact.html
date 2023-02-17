@@ -5,6 +5,10 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <meta http-equiv="X-UA-Compatible" content="ie=edge" />
     <title>Circle Landing Page</title>
+    <link
+      href="https://cdnjs.cloudflare.com/ajax/libs/hamburgers/1.2.1/hamburgers.min.css"
+      rel="stylesheet"
+    />
     <link rel="stylesheet" href="stylesheets/style.css" type="text/css" />
     <link
       href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap"
@@ -13,16 +17,19 @@
   </head>
 
   <body>
-    <nav class="navbar">
-      <div class="navbar__logo-container">
-        <img
-          class="navbar__logo"
-          src="images/logos/circle.svg"
-          alt="Circle Logo"
-          href="home.html"
-        />
-      </div>
-      <div class="navbar__home-link">
+    <header class="navbar">
+      <button class="panel-btn hamburger hamburger--minus" type="button">
+        <span class="hamburger-box">
+          <span class="hamburger-inner"></span>
+        </span>
+      </button>
+      <img
+        class="navbar__logo"
+        src="images/logos/circle.svg"
+        alt="Circle Logo"
+        href="home.html"
+      />
+      <!-- <div class="navbar__home-link">
         <a href="home.html" class="menu-link">Home</a>
       </div>
       <div class="navbar__projects-link">
@@ -30,11 +37,17 @@
       </div>
       <div class="navbar__services-link">
         <a href="#services" class="menu-link">Services</a>
-      </div>
-      <div class="navbar__button-container">
-        <a class="navbar__button" href="contact.html">Contact Us</a>
-      </div>
-    </nav>
+      </div> -->
+      <a class="navbar__button" href="contact.html">Contact Us</a>
+    </header>
+
+    <aside class="panel">
+      <nav class="panel-menu">
+        <a href="home.html">Home</a>
+        <a href="#projects">Projects</a>
+        <a href="#services">Services</a>
+      </nav>
+    </aside>
 
     <main class="contact">
       <h1>Contact Us</h1>
@@ -100,6 +113,6 @@
         <a class="footer__link" href="#">Privacy Policy</a>
       </div>
     </footer>
-    <script src="/javascript/index.js"></script>
+    <script src="js/index.js" type="module"></script>
   </body>
 </html>
