@@ -81,11 +81,13 @@ p,
 /* ********** Edición cabecera y menú ********** */
 header {
   width: 100%;
-  height: 12vh;
+  height: 90%;
   background-color: #072ac8;
   margin-bottom: 10vh;
-  padding: 3vw 2vw 2vw 2vw;
+  padding: 3vw 4vw 2vw 2vw;
   display: flex;
+  flex-wrap: nowrap;
+  gap: 10px;
   justify-content: space-between;
 }
 
@@ -152,40 +154,10 @@ header {
   background-color: var(--main-modal-color);
 }
 
-/* .navbar__home-link {
-  grid-column: 2/4;
-  grid-row: 2/4;
-  justify-self: center;
-  align-self: flex-end;
-}
-
-.navbar__projects-link {
-  grid-column: 4/6;
-  grid-row: 2/4;
-  justify-self: center;
-  align-self: flex-end;
-}
-
-.navbar__services-link {
-  grid-column: 6/8;
-  grid-row: 2/4;
-  justify-self: center;
-  align-self: flex-end;
-} */
-
-.navbar__button-container {
-  /* grid-column: 6/9;
-  grid-row: 1/2; */
-}
-
-.navbar__button-container:hover {
-  background-color: #a2d6f9;
-}
-
 .navbar__logo {
   filter: saturate(0);
   filter: brightness(20);
-  object-fit: contain;
+  object-fit: scale-down;
 }
 
 .menu-link {
@@ -197,6 +169,10 @@ header {
   color: var(--third-color);
 }
 
+.navbar__links {
+  display: none;
+}
+
 .navbar__button {
   width: 30vw;
   height: 90%;
@@ -204,10 +180,17 @@ header {
   text-align: center;
   justify-self: center;
   background-color: #fff;
-  color: #072ac8;
+  color: var(--main-color);
   border-radius: 4%;
   padding: 0.5vw;
 }
+
+.navbar__button:hover {
+  background-color: #ecf7ff;
+  color: var(--third-color);
+}
+
+/* ********** MainSection ********** */
 
 main {
   width: 90%;
@@ -293,6 +276,8 @@ main {
   box-sizing: border-box;
 }
 
+/* ********** LogosSection ********** */
+
 .logos {
   width: 90%;
   margin-left: auto;
@@ -320,6 +305,8 @@ main {
 .logo:hover {
   filter: grayscale(0);
 }
+
+/* ********** CardsSection ********** */
 .cards {
   width: 90%;
   margin-left: auto;
@@ -621,6 +608,35 @@ footer {
 }
 
 @media screen and (min-width: 768px) {
+  header {
+    background-color: #fff;
+  }
+  .panel-btn {
+    display: none;
+  }
+
+  .navbar__logo {
+    filter: saturate(100);
+    filter: brightness(1);
+  }
+
+  .navbar__links {
+    width: 30%;
+    display: flex;
+    justify-content: space-around;
+  }
+
+  .menu-link {
+    color: #072ac8;
+  }
+
+  .navbar__button {
+    background-color: var(--main-color);
+    color: #fff;
+  }
+  .navbar__button:hover {
+    background-color: var(--third-color);
+  }
   .card {
     flex: 0 0 45%;
   }
