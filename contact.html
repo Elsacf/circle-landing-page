@@ -47,13 +47,15 @@
 
     <main class="contact">
       <h1>Contact Us</h1>
-      <form class="contact__form" action="">
+      <form class="contact__form">
         <div class="contact__form-name">
           <label for="fname">Full Name*</label><br />
           <input
             type="text"
-            id="fname"
+            name="fname"
             placeholder="Enter your full name"
+            title="Just letters and spaces are accepted"
+            pattern="^[A-Za-zÑñÁáÉéÍíÓóÚúÜü\s]+$"
             required
           />
         </div>
@@ -61,8 +63,10 @@
           <label for="email">Email</label><br />
           <input
             type="text"
-            id="email"
+            name="email"
             placeholder="Enter your email address"
+            title="Email no correct"
+            pattern="^[a-z0-9]+(\.[_a-z0-9]+)*@[a-z0-9-]+(\.[a-z0-9-]+)*(\.[a-z]{2,15})$"
             required
           />
         </div>
@@ -70,16 +74,20 @@
           <label for="phone">Phone</label><br />
           <input
             type="number"
-            id="phone"
+            name="phone"
             placeholder="Enter your phone number"
+            title="Incorrect phone number"
+            pattern="^(([0-9]{1})*[- .(]*([0-9a-zA-Z]{3})*[- .)]*[0-9a-zA-Z]{3}[- .]*[0-9a-zA-Z]{4})+$"
             required
           />
         </div>
         <div class="contact__form-message">
           <label for="msg">Message</label><br />
           <textarea
-            id="msg"
+            name="msg"
             placeholder="Write your message here..."
+            title="Your message is too long. Must have less than 255 characters"
+            data-pattern="^.{1,255}$"
             required
           ></textarea>
         </div>
@@ -110,6 +118,6 @@
       </div>
     </footer>
 
-    <script src="js/index.js" type="module"></script>
+    <script src="/js/index.js" type="module"></script>
   </body>
 </html>
