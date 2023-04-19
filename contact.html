@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <title>Circle Landing Page</title>
+    <link
+      href="https://cdnjs.cloudflare.com/ajax/libs/hamburgers/1.2.1/hamburgers.min.css"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="stylesheets/style.css" type="text/css" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+
+  <body>
+    <header class="navbar">
+      <button class="panel-btn hamburger hamburger--minus" type="button">
+        <span class="hamburger-box">
+          <span class="hamburger-inner"></span>
+        </span>
+      </button>
+      <img
+        class="navbar__logo"
+        src="images/logos/circle.svg"
+        alt="Circle Logo"
+        href="home.html"
+      />
+      <div class="navbar__links">
+        <a href="home.html" class="menu-link">Home</a>
+        <a href="#projects" class="menu-link">Projects</a>
+        <a href="#services" class="menu-link">Services</a>
+      </div>
+      <a class="navbar__button" href="contact.html">Contact Us</a>
+    </header>
+
+    <aside class="panel">
+      <nav class="panel-menu">
+        <a href="home.html">Home</a>
+        <a href="#projects">Projects</a>
+        <a href="#services">Services</a>
+      </nav>
+    </aside>
+
+    <main class="contact">
+      <h1>Contact Us</h1>
+      <form class="contact__form">
+        <div class="contact__form-name">
+          <label for="fname">Full Name*</label><br />
+          <input
+            type="text"
+            name="fname"
+            placeholder="Enter your full name"
+            title="Just letters and spaces are accepted"
+            pattern="^[A-Za-zÑñÁáÉéÍíÓóÚúÜü\s]+$"
+            required
+          />
+        </div>
+        <div class="contact__form-email">
+          <label for="email">Email</label><br />
+          <input
+            type="text"
+            name="email"
+            placeholder="Enter your email address"
+            title="Email no correct"
+            pattern="^[a-z0-9]+(\.[_a-z0-9]+)*@[a-z0-9-]+(\.[a-z0-9-]+)*(\.[a-z]{2,15})$"
+            required
+          />
+        </div>
+        <div class="contact__form-phone">
+          <label for="phone">Phone</label><br />
+          <input
+            type="number"
+            name="phone"
+            placeholder="Enter your phone number"
+            title="Incorrect phone number"
+            pattern="^(([0-9]{1})*[- .(]*([0-9a-zA-Z]{3})*[- .)]*[0-9a-zA-Z]{3}[- .]*[0-9a-zA-Z]{4})+$"
+            required
+          />
+        </div>
+        <div class="contact__form-message">
+          <label for="msg">Message</label><br />
+          <textarea
+            name="msg"
+            placeholder="Write your message here..."
+            title="Your message is too long. Must have less than 255 characters"
+            data-pattern="^.{1,255}$"
+            required
+          ></textarea>
+        </div>
+        <div class="contact__form-button-container">
+          <input
+            type="submit"
+            value="Submit"
+            class="contact__form-button form-button"
+          />
+        </div>
+      </form>
+    </main>
+
+    <footer>
+      <img
+        class="footer__logo"
+        src="images/logos/circle.svg"
+        alt="Circle Logo"
+      />
+      <p class="footer__address">
+        2972 Westheimer Rd. Santa Ana,<br />Illinois 85486
+      </p>
+      <div class="footer__link-row">
+        <a class="footer__link" href="#">Team</a>
+        <a class="footer__link" href="#">Services</a>
+        <a class="footer__link" href="#">About Us</a>
+      </div>
+      <div class="footer__link-row">
+        <a class="footer__link" href="#">Press</a>
+        <a class="footer__link" href="#">Projects</a>
+        <a class="footer__link" href="#">Privacy Policy</a>
+      </div>
+    </footer>
+
+    <section class="modal">
+      <div class="modal_container">
+        <img src="/images/modal_message.png" class="modal_img" alt />
+        <h2 class="modal_title">We've got your message!</h2>
+        <p class="modal_paragraph">
+          Thank you for your message.<br />As soon as possible you will have an
+          email with our answer in your inbox.
+        </p>
+        <a href="#" class="modal_close">Great!</a>
+      </div>
+    </section>
+
+    <script src="/js/index.js" type="module"></script>
+  </body>
+</html>
