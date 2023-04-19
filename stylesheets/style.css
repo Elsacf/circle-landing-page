@@ -657,13 +657,24 @@ footer {
 .contact__form-button-container {
   grid-column: 1 / 2;
   grid-row: 5 / 6;
+  display: flex;
+  align-items: center;
+  background-color: #072ac8;
+  border: thin solid var(--third-color);
 }
 .contact__form-button {
   background-color: #072ac8;
   color: #fff;
+  border: none;
 }
 
 .contact__form-button:hover {
+  font-weight: bold;
+  background-color: #6b708d;
+  cursor: pointer;
+  transition: all 0.8s ease;
+}
+.contact__form-button-container:hover {
   font-weight: bold;
   background-color: #6b708d;
   cursor: pointer;
