@@ -217,14 +217,18 @@
     <section class="contact-box box">
       <h3 class="contact-box__title">Do you have any questions?</h3>
       <p class="contact-box__description">Let us help you!</p>
+      <form class="contact-box-form">
       <input
         type="text"
         class="form-email"
-        name="email"
+        name="suscription-email"
         placeholder="Enter your email"
+        title=""
+        pattern="^[a-z0-9]+(\.[_a-z0-9]+)*@[a-z0-9-]+(\.[a-z0-9-]+)*(\.[a-z]{2,15})$"
         required
       />
       <input type="submit" class="form-button" value="Subscribe" />
+      </form>
     </section>
 
     <footer>
@@ -247,6 +251,16 @@
           <a class="footer__link" href="#">Privacy Policy</a>
         </div>
     </footer>
+
+    <section class="modal">
+      <div class="modal_container">
+        <img src="/images/modal_image.svg" class="modal_img" alt>
+        <h2 class="modal_title">¡Email received!</h2>
+        <p class="modal_paragraph">Check your inbox. We've sent you our FAQ but if your question is not there. Replay explaining your needs. We will contact you back as soon as possible.</p>
+        <a href="#" class="modal_close">Close</a>
+      </div>
+    </section>
+
     <script src="js/index.js" type="module"></script>
   </body>
 </html>
