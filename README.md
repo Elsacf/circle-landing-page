@@ -12,7 +12,7 @@ Pequeño proyecto para el Bootcamp de desarrollo Frontend de Ironhack. He maquet
 - [Twitter](https://twitter.com/elsacastillofr)
 ---
 ## Ver ejemplo en vivo 👀
-[Quiero ver el resultado](https://circle-landing-page.netlify.app/home.html)
+https://circle-landing-page.netlify.app/home.html
 
 ---
 ## Contratación 
